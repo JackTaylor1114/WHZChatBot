@@ -1,0 +1,16 @@
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="message_row">
+      <ion-col col-9>
+        <ion-item no-lines>
+          <ion-input type="text" placeholder="Message" [(ngModel)]="message"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-3>
+        <button ion-button clear class="button-submit" (click)="sendMessage()">
+          Ask
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

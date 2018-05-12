@@ -1,0 +1,6 @@
+'https://api.dialogflow.com/v1/query?v=20150910'
+
+'Content-Type': 'application/json',
+'Authorization': 'Bearer 09d5cd544cda41bbafc2159cf462a7a7'
+
+&lang=en&sessionId=12345&query=
