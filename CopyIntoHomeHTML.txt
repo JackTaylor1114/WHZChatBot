@@ -1,3 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      WHZ ChatBot
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row *ngFor="let message of messages">
+      <ion-col col-9 *ngIf="message.from_you != true" class="message" [ngClass]="{'my_message': message.from_you == true, 'other_message': message.from_you != true}">
+        <span>{{ message.text }}</span>
+      </ion-col>
+      <ion-col offset-3 col-9 *ngIf="message.from_you == true" class="message" [ngClass]="{'my_message': message.from_you == true, 'other_message': message.from_you != true}">
+        <span>{{ message.text }}</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
 <ion-footer>
   <ion-toolbar>
     <ion-row class="message_row">
